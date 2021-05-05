@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- START "Hele siden" ----------- */
+body {
+	background-color: #463E3A
+}
+p {
+	font-size: 20px;
+	color: white;
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+html {
+	scroll-behavior: smooth;
+}
+/* ---------- STOP "Hele siden" ----------- */
+
+
+/* ---------- START "Header" ----------- */
+#header_logo {
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+	width: 70%;
+}
+#topmenu {
+	text-align: center;
+	margin-top: 50px;
+}
+#menulinks {
+	list-style: none;
+}
+#menulinks a {
+	text-decoration: none;
+	color: #A2ADAB;
+	font-size: 36px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#menulinks a:hover{
+	color: #8591A4;
+}
+/* ---------- STOP "Header" ----------- */
+
+
+/* ---------- START "Main" ----------- */
+#billede1 {
+	display: block;
+	margin: auto;
+	width: 50%;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+#billede2 {
+	display: block;
+	margin: auto;
+	width: 50%;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+
+/* ---------- START "Info" ----------- */
+#info_kniv_top {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+#info_kniv_info {
+	display: block;
+	margin: auto;
+	width: 70%;
+}
+/* ---------- STOP "Info" ----------- */
+
+
+/* ---------- START "Kontakt" ----------- */
+#kontaktinfo {
+	text-align: center;
+	font-size: 20px;
+	color: #A2ADAB;
+}
