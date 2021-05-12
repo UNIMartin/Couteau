@@ -73,36 +73,16 @@
 }
 
 .navbar .menu-list li a:hover{
-    color: cyan;
-}
-
-
-.banner{
-    /* height: 100vh ; */ 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding-top: 150px;
+    color: var(--baggrund-venstrenavbar)
 }
 
 .about{
     padding: 40px 0;
 }
 
-.about .title{
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.about p{
-    padding-top: 20px;
-    text-align: justify;
-}
-
 .icon{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     display: none;
 }
@@ -112,10 +92,95 @@
     right: 30px;
     top: 20px;
 }
+
+.shop{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
 /*------------ Navbar: SLUT -------------*/
 
+/*------------ Index: START -------------*/
+.banner{
+    /* height: 100vh ; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 150px;
+}
+
+.index_kniven{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px; 
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.about .title {
+    font-size:2.5rem;
+    font-weight: 700;
+} 
+
+.about p{
+    padding-top: 1.8rem;
+    letter-spacing: 1px;
+     text-align: justify; 
+}
+
+/*------------ Index: SLUT -------------*/
+
+/*------------- Info: START ------------*/
+.kniven_mand{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    
+}
+
+.kniven_mand2{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/*-------------- Info: SLUT -------------*/
+
+/*---------- Footer: START ------------*/
+.footer{
+    width: 100%;
+    padding: 20px;
+    background: var(--navbar-top);
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+}
+/*---------- Footer: SLUT -------------*/
+
+
 /*------------ Media Queries: START ----------*/
-@media(max-width:868px){
+/*---------- Mobil: Alt UNDER 990px-------------*/
+@media(max-width:990px){ 
+
+    .navbar .menu-list li a:hover{
+    color: var(--navbar-top);
+}
+
     body.disbaledScroll{
         overflow: hidden;
     }
@@ -152,5 +217,69 @@
     .navbar .menu-list li a{
         font-size: 23px;
     }
+
+    .banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 150px;
 }
+/*-------- Index: queries ----------*/
+.banner{
+    /* height: 100vh ; */ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 150px;
+}
+
+.index_kniven{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.about .title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about p{
+    padding-top: 1.2rem;
+    letter-spacing: 1px;
+    /* text-align: justify; */
+}
+
+/*-------- Information: queries ----------*/
+.kniven_mand{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    
+}
+
+.kniven_mand2{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+}
+
+
 /*------------ Media Queries: SLUT ----------*/
