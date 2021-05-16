@@ -48,24 +48,22 @@
 
         <main class="kontakt-text">
             <div class="container shadow">
-                <div style="text-align:center">
+                <div id="kontakt-header">
                     <h1>Kontakt os</h1>
-                    <p>Swing by for a cup of coffee, or leave us a message:</p> <!-- TODO Evt. en anden tekst -->
+                    <h3>Tøv ikke med at kontakte os for spørgsmål eller andet</h3> <!-- TODO Evt. en anden tekst -->
                 </div>
                 <div class="row">
                     <div class="column shadow">
-                        <label for="fname">Find os her</label>
-                        <!-- <img src="/img/kniv_info.png" style="width:100%"> -->
+                        <label for="findos">Find os her</label>
                         <div id="map" class="column"></div>
                         <div  id="kontakt-info">
-                            <!-- <br> -->
                             
                             <h3>Adresse</h3>
                             <p>COUTEAU</p>
                             <p>Park Allé 3</p>
                             <p>8000 Aarhus C</p>
                             <h3>Telefon</h3>
-                            <p>+45 12345678</p>
+                            <p>87654321</p>
                             <h3>E-mail</h3>
                             <p>info@couteau.dk</p>
                             
@@ -87,8 +85,7 @@
                             </select>
                             <label for="besked">Besked</label>
                             <textarea id="emne" name="emne" placeholder="Skriv beskeden.." style="height:170px"></textarea>
-                            <input type="submit" value="Send">
-                            <!-- <a href="javascript:history.go(-1)">link text here...</a> -->
+                            <a id="kontakt_send" href="404.html" onclick="document.review.submit()">Send</a><!-- TODO Evt. link til MODAL side -->
                         </form>
                     </div>
                 </div>

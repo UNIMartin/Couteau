@@ -9,12 +9,12 @@
   --h1-text-size-700: 2rem;
   --h2-text-size-700: 1.8rem;
   --h3-text-size-700: 1.45rem;
-  --p-text-size-700: 1.1;
+  --p-text-size-700: 1.2rem;
 
-  --h1-text-size-1200: 2.2rem;
-  --h2-text-size-1200: 2rem;
-  --h3-text-size-1200: 1.6rem;
-  --p-text-size-1200: 1.2rem;
+  --h1-text-size-1200: 2.4rem;
+  --h2-text-size-1200: 2.1rem;
+  --h3-text-size-1200: 1.8rem;
+  --p-text-size-1200: 1.3rem;
 
   --header-height: 98px;
   /* --overlay-background-color:#349adf33; */
@@ -41,7 +41,7 @@
 
   --index-hero-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url('../img/banner/cover-index.png');
-  --pleje-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%;
+  --pleje-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%; /* TODO Rense ud i disse ubrugte inden aflevering*/
   --rockwell-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%;
   --inspiration-hero-image: url('../img/banner/cover-index.png') no-repeat 100%
     0%;
@@ -50,7 +50,7 @@
   --omos-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%;
   --hero-image-404: url('../img/banner/cover-index.png') no-repeat 100% 0%;
 
-  --index-hero-image-height-mobile: 300px;
+  --index-hero-image-height-mobile: 300px; /* TODO Rense ud i disse ubrugte inden aflevering*/
   --index-hero-image-height-700: 500px;
   --index-hero-image-height-1200: 600px;
   --pleje-hero-image-height-mobile: 100px;
@@ -108,6 +108,15 @@ a {
   font-size: var(--p-text-size-mobile);
 }
 
+input[type='submit'],
+label {
+  font-size: var(--p-text-size-mobile);
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'futura-pt', sans-serif;
   font-size: 16px;
@@ -124,10 +133,7 @@ header {
   width: 100%;
   z-index: 9999;
   height: var(--header-height);
-}
-
-a {
-  text-decoration: none;
+  /* background-color: var(--menu-backcolor); */
 }
 
 .logo {
@@ -145,14 +151,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* color: black; */
-  padding: 15px;
+  min-height: var(--header-height);
   background-color: var(--menu-backcolor);
   list-style: none;
 }
 
 .nav {
-  height: 30px;
+  height: var(--header-height);
 }
 
 .menu li a {
@@ -165,7 +170,6 @@ a {
 
 .menu li.subitem a /* Dropdown text */ {
   padding: 15px;
-  /* background-color: var(--menu-dropdown-background-color); */
   color: var(--menu-dropdown-text-color);
 }
 
@@ -173,6 +177,7 @@ a {
   order: 1;
   font-size: 1.5rem;
   margin-right: 30px;
+  transition: all 0.3s ease;
 }
 
 .item {
@@ -208,6 +213,10 @@ a {
   display: block;
 }
 
+.active {
+  padding-top: 25px;
+}
+
 .button.secondary {
   border-bottom: 1px #444 solid;
 }
@@ -236,25 +245,6 @@ a {
 }
 /* #endregion NAVBAR */
 
-/*--------------- Hero ------------------*/
-.hero-index {
-  background: var(--index-hero-image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* position: relative; */
-  width: var(--max-bredde-sideindhold-mobile);
-  height: var(--index-hero-image-height-mobile);
-  margin-left: 10px;
-}
-
-/*--------------- Main ------------------*/
-
-#page-container {
-  position: relative;
-  /* min-height: calc(100vh - var(--header-height)); */
-  min-height: calc(100vh - var(--header-height));
-}
 /*--------------- Footer START ------------------*/
 /* #region FOOTER */
 
@@ -292,7 +282,6 @@ a {
   bottom: 0;
   width: 100%;
   height: var(--footer-height);
-
   height: fit-content;
 }
 
@@ -310,24 +299,40 @@ a {
 }
 
 .fa-instagram {
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 /* #endregion FOOTER */
 
 /* ---------- ALLE sider ------------ */
 
+/* #region Landing page */
+
+.hero-index {
+  background: var(--index-hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  width: var(--max-bredde-sideindhold-mobile);
+  height: var(--index-hero-image-height-mobile);
+  margin-left: 10px;
+}
+
+/* #endregion Landing page */
+
 /* #region Generelle ting */
-.error-text,
+
 .index-text,
+.pleje-text,
+.rockwell-text,
 .inspiration-text,
+.omos-text,
 .kontakt-text,
 .kurv-text,
-.omos-text,
-.pleje-text,
-.rockwell-text {
+.error-text {
   width: var(--max-bredde-sideindhold-mobile);
-  margin-top: var(--page-content-margin-top-mobile);
+  padding-top: var(--page-content-padding-top-mobile);
   margin: auto;
 }
 
@@ -340,7 +345,7 @@ a {
 .pleje-hero,
 .rockwell-hero {
   width: var(--max-bredde-sideindhold-mobile);
-  margin: auto;
+  /* margin: auto; */
 }
 
 #content-wrap {
@@ -348,6 +353,18 @@ a {
   width: var(--max-bredde-sideindhold-mobile);
   margin: auto;
 }
+
+#page-container {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.shadow {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
 /* #endregion Generelle ting */
 
 /*----------- Pleje START ------------*/
@@ -402,6 +419,12 @@ a {
   height: auto;
 }
 
+.inspiration-video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 99%;
+}
+
 /* #endregion Inspiration */
 
 /*----------- Om os START ------------*/
@@ -418,6 +441,12 @@ form {
   padding-top: 20px;
 }
 
+#kontakt-header {
+  text-align: center;
+  line-height: 40px;
+  padding-bottom: 30px;
+}
+
 input[type='text'],
 select,
 textarea {
@@ -430,33 +459,17 @@ textarea {
   font-size: var(--p-text-size-mobile);
 }
 
-input[type='submit'] {
-  background-color: var(--login-button);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-
 label {
   font-size: var(--h3-text-size-mobile);
-}
-
-input[type='submit']:hover {
-  background-color: var(--menu-backcolor);
 }
 
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  /* background-color: var(--login-button); */
   padding: 10px;
 }
 
-.column,
-input[type='submit'] {
+.column {
   width: 100%;
   margin-top: 0;
   font-size: var(--h3-text-size-mobile);
@@ -484,6 +497,17 @@ input[type='submit'] {
   padding-left: 20px;
   padding-bottom: 20px;
   line-height: 30px;
+}
+
+#kontakt_send {
+  display: block;
+  background-color: var(--login-button);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  text-align: center;
 }
 
 /* #endregion Kontakt */
@@ -525,15 +549,6 @@ input[type='submit'] {
 
 /* #endregion 404 */
 
-/*==================================================
- * Shadow
- * ===============================================*/
-.shadow {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12);
-}
-
 /*----------- Media Query: Tablet menu ------------*/
 @media all and (min-width: 700px) {
   /* #region Generelle ting */
@@ -551,6 +566,11 @@ input[type='submit'] {
 
   p,
   a {
+    font-size: var(--p-text-size-700);
+  }
+
+  input[type='submit'],
+  label {
     font-size: var(--p-text-size-700);
   }
 
@@ -575,12 +595,12 @@ input[type='submit'] {
   .omos-hero,
   .pleje-hero,
   .rockwell-hero {
-    width: var(--max-bredde-sideindhold-mobile);
+    width: var(--max-bredde-sideindhold-700);
     /* margin: auto; */
   }
 
   #content-wrap {
-    width: var(--max-bredde-sideindhold-mobile);
+    width: var(--max-bredde-sideindhold-700);
     margin: auto;
   }
 
@@ -599,6 +619,10 @@ input[type='submit'] {
     padding: 10px 10px;
     border-radius: 7px;
     color: var(--menu-text-color);
+  }
+
+  .active {
+    padding-top: 15px;
   }
 
   .logo {
@@ -691,6 +715,10 @@ input[type='submit'] {
   }
 
   /* #endregion Kontakt */
+
+  /* #region FOOTER */
+
+  /* #endregion FOOTER */
 }
 /*----------- Media Query: Desktop menu ------------*/
 @media all and (min-width: 1200px) {
@@ -709,6 +737,11 @@ input[type='submit'] {
 
   p,
   a {
+    font-size: var(--p-text-size-1200);
+  }
+
+  input[type='submit'],
+  label {
     font-size: var(--p-text-size-1200);
   }
 
@@ -786,4 +819,8 @@ input[type='submit'] {
     border-style: none;
   }
   /* #endregion Header */
+
+  /* #region FOOTER */
+
+  /* #endregion FOOTER */
 }
