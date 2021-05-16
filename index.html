@@ -7,72 +7,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.typekit.net/nie0yvd.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/550b3be50a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/nie0yvd.css"> <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+
     <title>Couteau | Home</title>
 </head>
 
 <header>
-    <nav class="navbar">
-        <div class="content">
-            <div class="logo"><a href="#">
-                    <img src="/img/Couteau_logo.png" alt="Couteau logo">
-                </a></div>
-            <!-- <div class="logo"><a href="#"></a></div> -->
-            <ul class="menu-list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li><a href="#">Home</a></li>
-                <li><a href="/information.html">Information</a></li>
-                <li><a href="#">Om os</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Kurv</a><i class="shop fas fa-shopping-bag"></i></li>
-            </ul>
-            <div class="icon menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html">
+                    <img src="./img/Couteau_logo.png" alt="">
+                </a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item has-submenu">
+                <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="pleje.html">Pleje & vedligehold</a></li>
+                    <li class="subitem"><a href="rockwell.html">Rockwellskalaen</a></li>
+                    <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
+
+                </ul>
+            </li>
+            <li class="item"><a href="om-os.html">Om os</a></li>
+            <li class="item"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item"><a href="kurv.html">Kurv <i class="fas fa-shopping-cart"></i></a></li>
+            <li class="item button"><a href="404.html">Log In</a></li>
+            <li class="item button secondary"><a href="404.html">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
     </nav>
-
-    <img src="/img/banner/couteau_splash@2x.png" alt="Couteau kokkekniv i vandsprøjt med deres navn ovenover"
-        class="banner">
-    <div class="about">
-        <div class="content">
-            <h2 class="title">Velkommen til Couteau</h2>
-            <p>Damaskusknivenes kendetegn er det karakteristiske smukke mønster og den ekstreme holdbarhed.
-                Så leder du efter en tilføjelse til din allerede eksisterende samling, eller er du helt ny i gamet, så
-                behøver du ikke lede længere.
-                Her hos Couteau kan du nemlig starte din samling af damaskusknive op, med den smukke kokkekniv.
-            </p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique enim repellendus ipsam tempore.
-                Aut quas non accusantium quidem illum consectetur rerum ipsa officiis eveniet odit, iure ducimus
-                consequatur excepturi et quisquam nesciunt! Animi voluptas ducimus incidunt molestias quas earum porro
-                aut ratione dicta recusandae? Porro numquam natus tenetur ipsum nostrum iure dolor blanditiis corporis
-                minima, quasi quod officia odit enim, quibusdam excepturi ut modi, similique aspernatur distinctio!
-                Tenetur adipisci ex similique officiis eum ipsa qui error optio dolorem. Necessitatibus!
-            </p>
-
-
-
-            <img src="/img/kniven.jpg" alt="Mand holder Couteaus damaskuskniv i læderhandske" class="index_kniven">
-
-        </div>
-    </div>
 </header>
 
 <body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="hero-index shadow"></div>
 
-    <script src="/js/script.js" async defer></script>
+                <main class="index-text">
+                    <!-- Sideindhold starter her -->
+                    <h2>Velkommen bla bla bla</h2>
+                    <p>
+                        Leder du efter en ny, god kokkekniv til at komplimentere din formåen i køkkenet? Så er du kommet til
+                        det rette sted!
+                        Couteaus damaskus kokkekniv, i japanskstål er udarbejdet efter alle traditionernes forskrifter og er
+                        derfor yderst holdbar, skarp og en fornøjelse at have i hånden.
+                    </p>
+                    <br>
+                    <p>
+                        Med en damaskuskniv får du ikke bare en køkkenkniv i traditionel forstand - du får et et værktøj,
+                        der kan holde mange år frem. Klingens karakteristiske mønster er skabt ved hjælp af den specielle
+                        foldeteknik, som i alt sin enkelthed går ud på at papirstynde lag af stål - af forskellige slags,
+                        foldes og derved gør stålet nærmest ubrydeligt.
+                    </p>
+                    <!-- Sideindhold slutter her -->
+                </main>
+    
+        </div>
+            
+            
+        <footer class="site-footer content">
+            <div class="footer-content-wrapper">
+                <div class="footer-col">
+                    <div class="col-four">
+                        <p>COUTEAU &copy <script>document.write(new Date().getFullYear());</script> <br>
+                            Park Allé - 8000 Aarhus C
+                        </p>
+                        <div class="some">
+                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+        <!-- Scripts -->
+        <script src="./js/script.js" async defer></script>
 </body>
 
-<footer class="footer">
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo odit rem et fugit maxime voluptates, iusto
-        sed quae quia tenetur.
-    </p>
-</footer>
 
 </html>

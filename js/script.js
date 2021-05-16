@@ -1,24 +1,67 @@
+console.log('Jeg virker') //JS check
 
-console.log("Jeg virker") //JS check
+// Toggle mobile menu
+const toggle = document.querySelector('.toggle')
+const menu = document.querySelector('.menu')
 
-//Sørger for at menuen åbner fra siden, er sticky og forsvinder ved størrelsesskift
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menu = document.querySelector(".menu-list");
-const menuBtn = document.querySelector(".menu-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = () => {
-    menu.classList.add("active");
-    menuBtn.classList.add("hide");
-    body.classList.add("disbaledScroll");
+function toggleMenu() {
+  if (menu.classList.contains('active')) {
+    menu.classList.remove('active')
+    toggle.querySelector('a').innerHTML = "<i class='fas fa-bars'></i>"
+  } else {
+    menu.classList.add('active')
+    toggle.querySelector('a').innerHTML = "<i class='fas fa-times'></i>"
+  }
 }
 
-cancelBtn.onclick = () => {
-    menu.classList.remove("active");
-    menuBtn.classList.remove("hide");
-    body.classList.remove("disbaledScroll");
+toggle.addEventListener('click', toggleMenu, false)
+
+// Submenu
+const items = document.querySelectorAll('.item')
+const arrow = document.querySelector('.fa-caret-down')
+
+function toggleItem() {
+  if (this.classList.contains('submenu-active')) {
+    this.classList.remove('submenu-active')
+    arrow.classList.remove('rotate')
+  } else if (menu.querySelector('.submenu-active')) {
+    menu.querySelector('.submenu-active').classList.remove('submenu-active')
+    this.classList.add('submenu-active')
+    // arrow.classList.add('.rotate')
+  } else {
+    this.classList.add('submenu-active')
+    arrow.classList.add('rotate')
+  }
 }
-//Sørger for at menuen er sticky
-window.onscroll = () => {
-    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+
+for (let item of items) {
+  if (item.querySelector('.submenu')) {
+    item.addEventListener('click', toggleItem, false)
+    item.addEventListener('keypress', toggleItem, false)
+  }
+}
+// Close submenu from anywhere in the page
+function closeSubmenu(e) {
+  let isClickInside = menu.contains(e.target)
+
+  if (!isClickInside && menu.querySelector('.submenu-active')) {
+    menu.querySelector('.submenu-active').classList.remove('submenu-active')
+  }
+}
+document.addEventListener('click', closeSubmenu, false)
+
+// Google Map API
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 56.152538, lng: 10.204006 }
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: uluru,
+  })
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  })
 }

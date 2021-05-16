@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/nie0yvd.css"> <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+
+    <title>Couteau | Kontakt</title>
+</head>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html">
+                    <img src="./img/Couteau_logo.png" alt="">
+                </a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item has-submenu">
+                <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="pleje.html">Pleje & vedligehold</a></li>
+                    <li class="subitem"><a href="rockwell.html">Rockwellskalaen</a></li>
+                    <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
+
+                </ul>
+            </li>
+            <li class="item"><a href="om-os.html">Om os</a></li>
+            <li class="item"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item"><a href="kurv.html">Kurv <i class="fas fa-shopping-cart"></i></a></li>
+            <li class="item button"><a href="404.html">Log In</a></li>
+            <li class="item button secondary"><a href="404.html">Sign Up</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+        <!-- <div class="hero-kontakt shadow"></div> -->
+
+        <main class="kontakt-text">
+            <div class="container shadow">
+                <div style="text-align:center">
+                    <h1>Kontakt os</h1>
+                    <p>Swing by for a cup of coffee, or leave us a message:</p> <!-- TODO Evt. en anden tekst -->
+                </div>
+                <div class="row">
+                    <div class="column shadow">
+                        <label for="fname">Find os her</label>
+                        <!-- <img src="/img/kniv_info.png" style="width:100%"> -->
+                        <div id="map" class="column"></div>
+                        <div  id="kontakt-info">
+                            <!-- <br> -->
+                            
+                            <h3>Adresse</h3>
+                            <p>COUTEAU</p>
+                            <p>Park Allé 3</p>
+                            <p>8000 Aarhus C</p>
+                            <h3>Telefon</h3>
+                            <p>+45 12345678</p>
+                            <h3>E-mail</h3>
+                            <p>info@couteau.dk</p>
+                            
+                        </div>
+                    </div>
+                    <div class="column">
+                        <form action="#">
+                            <h2>Skriv til os</h2>
+                            <label for="name">Navn</label>
+                            <input type="text" id="name" name="name" placeholder="Dit navn..">
+                            <label for="lname">E-mail</label>
+                            <input type="text" id="e-mail" name="e-mail" placeholder="Din e-mail..">
+                            <label for="emne">Emne</label>
+                            <select id="emne" name="emne">
+                                <option value="risros">Ris/Ros</option>
+                                <option value="reklamation">Reklamation</option>
+                                <option value="sporgsmal">Spørgsmål</option>
+                                <option value="andet">Andet</option>
+                            </select>
+                            <label for="besked">Besked</label>
+                            <textarea id="emne" name="emne" placeholder="Skriv beskeden.." style="height:170px"></textarea>
+                            <input type="submit" value="Send">
+                            <!-- <a href="javascript:history.go(-1)">link text here...</a> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+        <footer class="site-footer content">
+            <div class="footer-content-wrapper">
+                <div class="footer-col">
+                    <div class="col-four">
+                        <p>COUTEAU &copy
+                            <script>document.write(new Date().getFullYear());</script> <br>
+                            Park Allé - 8000 Aarhus C
+                        </p>
+                        <div class="some">
+                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+        <!-- Scripts -->
+        <script src="./js/script.js" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQsmDG0Bp9Dszzxc-qbZZC3Wid0UrefH4&callback=initMap&libraries=&v=weekly"
+            async></script>
+</body>
+
+</html>
