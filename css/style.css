@@ -30,6 +30,7 @@
 
   --login-button: #8591a4;
   --sign-up-button: #8591a4;
+  --links-color:black;
 
   --max-bredde-sideindhold-mobile: 95%;
   --max-bredde-sideindhold-700: 90%;
@@ -101,6 +102,11 @@ h2 {
 
 h3 {
   font-size: var(--h3-text-size-mobile);
+}
+
+.links{
+  color: var(--links-color);
+  font-weight: 700;
 }
 
 p,
@@ -515,7 +521,53 @@ label {
 /*----------- Kurv START ------------*/
 
 /* #region Kurv */
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.column button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: var(--login-button);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.produkt-billede{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.fragt{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  text-align: center;
+  background-color: #f1f1f1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.produkt-text{
+  text-align: left;
+}
 /* #endregion Kurv */
 
 /*----------- 404 START ------------*/
@@ -719,6 +771,36 @@ label {
   /* #region FOOTER */
 
   /* #endregion FOOTER */
+
+  /*#region kurv*/
+    .column {
+  float: center;
+  width: 32,3%;
+  max-height: 1000px;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fragt{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: left;
+  justify-content: space-around;
+   background-color: #f1f1f1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 20px;
+}
+  /*#endregion kurv*/
 }
 /*----------- Media Query: Desktop menu ------------*/
 @media all and (min-width: 1200px) {

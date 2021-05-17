@@ -50,6 +50,9 @@ function closeSubmenu(e) {
 }
 document.addEventListener('click', closeSubmenu, false)
 
+
+
+
 // Google Map API
 function initMap() {
   // The location of Uluru
