@@ -41,8 +41,8 @@
   --page-content-padding-top-1200: 120px;
 
   --index-hero-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url('../img/banner/cover-index.png');
-  --pleje-hero-image: url('../img/billeder/cover-index.png') no-repeat 100% 0%; /* TODO Rense ud i disse ubrugte inden aflevering*/
+    url('../img/billeder/cover-index.png');/* TODO Rense ud i disse ubrugte inden aflevering*/
+  /* --pleje-hero-image: url('../img/billeder/cover-index.png') no-repeat 100% 0%;  */
   /* --rockwell-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%; */
   /* --inspiration-hero-image: url('../img/banner/cover-index.png') no-repeat 100%
     0%; */
