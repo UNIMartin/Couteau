@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="https://use.typekit.net/nie0yvd.css"> <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="icon" type="image/png" href="./img/billeder/favicon.png" />
 
     <title>Couteau | Kontakt</title>
 </head>
 
+<!-- Navigation - menuen -->
 <header>
     <nav>
         <ul class="menu">
             <li class="logo"><a href="index.html">
-                    <img src="./img/Couteau_logo.png" alt="">
+                    <img src="./img/billeder/Couteau_logo.png" alt="">
                 </a></li>
             <li class="item"><a href="index.html">Home</a></li>
             <li class="item has-submenu">
@@ -42,57 +43,60 @@
 </header>
 
 <body>
+    <!-- Sideindhold starter her -->
     <div id="page-container">
         <div id="content-wrap">
-        <!-- <div class="hero-kontakt shadow"></div> -->
+            <main class="kontakt-text">
+                <div class="container shadow">
+                    <div id="kontakt-header">
+                        <h1>Kontakt os</h1>
+                        <h3>Tøv ikke med at kontakte os for spørgsmål eller andet</h3> <!-- TODO Evt. en anden tekst -->
+                    </div>
+                    <div class="row">
+                        <div class="column shadow">
+                            <label for="findos">Find os her</label>
+                            <div id="map" class="column"></div>
+                            <div id="kontakt-info">
 
-        <main class="kontakt-text">
-            <div class="container shadow">
-                <div id="kontakt-header">
-                    <h1>Kontakt os</h1>
-                    <h3>Tøv ikke med at kontakte os for spørgsmål eller andet</h3> <!-- TODO Evt. en anden tekst -->
-                </div>
-                <div class="row">
-                    <div class="column shadow">
-                        <label for="findos">Find os her</label>
-                        <div id="map" class="column"></div>
-                        <div  id="kontakt-info">
-                            
-                            <h3>Adresse</h3>
-                            <p>COUTEAU</p>
-                            <p>Park Allé 3</p>
-                            <p>8000 Aarhus C</p>
-                            <h3>Telefon</h3>
-                            <p>87654321</p>
-                            <h3>E-mail</h3>
-                            <p>info@couteau.dk</p>
-                            
+                                <h3>Adresse</h3>
+                                <p>COUTEAU</p>
+                                <p>Park Allé 3</p>
+                                <p>8000 Aarhus C</p>
+                                <h3>Telefon</h3>
+                                <p>87654321</p>
+                                <h3>E-mail</h3>
+                                <p>info@couteau.dk</p>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <form action="#">
+                                <h2>Skriv til os</h2>
+                                <label for="name">Navn</label>
+                                <input type="text" id="name" name="name" placeholder="Dit navn..">
+                                <label for="lname">E-mail</label>
+                                <input type="text" id="e-mail" name="e-mail" placeholder="Din e-mail..">
+                                <label for="emne">Emne</label>
+                                <select id="emne" name="emne">
+                                    <option value="risros">Ris/Ros</option>
+                                    <option value="reklamation">Reklamation</option>
+                                    <option value="sporgsmal">Spørgsmål</option>
+                                    <option value="andet">Andet</option>
+                                </select>
+                                <label for="besked">Besked</label>
+                                <textarea id="emne" name="emne" placeholder="Skriv beskeden.."
+                                    style="height:170px"></textarea>
+                                <a id="kontakt_send" href="404.html" onclick="document.review.submit()">Send</a>
+                                <!-- TODO Evt. link til MODAL side -->
+                            </form>
                         </div>
                     </div>
-                    <div class="column">
-                        <form action="#">
-                            <h2>Skriv til os</h2>
-                            <label for="name">Navn</label>
-                            <input type="text" id="name" name="name" placeholder="Dit navn..">
-                            <label for="lname">E-mail</label>
-                            <input type="text" id="e-mail" name="e-mail" placeholder="Din e-mail..">
-                            <label for="emne">Emne</label>
-                            <select id="emne" name="emne">
-                                <option value="risros">Ris/Ros</option>
-                                <option value="reklamation">Reklamation</option>
-                                <option value="sporgsmal">Spørgsmål</option>
-                                <option value="andet">Andet</option>
-                            </select>
-                            <label for="besked">Besked</label>
-                            <textarea id="emne" name="emne" placeholder="Skriv beskeden.." style="height:170px"></textarea>
-                            <a id="kontakt_send" href="404.html" onclick="document.review.submit()">Send</a><!-- TODO Evt. link til MODAL side -->
-                        </form>
-                    </div>
                 </div>
-            </div>
-            
-        </main>
-    </div>
+            </main>
+        </div>
+        <!-- Sideindhold slutter her -->
+
+        <!-- footer -->
         <footer class="site-footer content">
             <div class="footer-content-wrapper">
                 <div class="footer-col">
@@ -109,10 +113,12 @@
                 </div>
         </footer>
     </div>
-        <!-- Scripts -->
-        <script src="./js/script.js" async defer></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQsmDG0Bp9Dszzxc-qbZZC3Wid0UrefH4&callback=initMap&libraries=&v=weekly"
-            async></script>
+
+    <!-- Scripts + Googlemaps -->
+    <script src="./js/script.js" async defer></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQsmDG0Bp9Dszzxc-qbZZC3Wid0UrefH4&callback=initMap&libraries=&v=weekly"
+        async></script>
 </body>
 
 </html>
