@@ -68,3 +68,15 @@ function initMap() {
     map: map,
   })
 }
+
+
+//Login form
+//Henter modalen
+var modal = document.getElementById('login_knap');
+
+// Når brugeren klikker udenfor modalen, så lukkes den
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

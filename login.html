@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/nie0yvd.css"> <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="./img/billeder/favicon.png" /> <!-- Favicon -->
+
+    <title>Couteau | Home</title>
+</head>
+
+<!-- Navigation - menuen -->
+<header>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html">
+                    <img src="./img/billeder/Couteau_logo.png" alt="">
+                </a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item has-submenu">
+                <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="pleje.html">Pleje & vedligehold</a></li>
+                    <li class="subitem"><a href="rockwell.html">Rockwellskalaen</a></li>
+                    <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
+
+                </ul>
+            </li>
+            <li class="item"><a href="om-os.html">Om os</a></li>
+            <li class="item"><a href="kontakt.html">Kontakt</a></li>
+            <!-- <li class="item"><a href="kurv.html">Kurv <i class="fas fa-shopping-cart"></i></a></li> -->
+            <li class="item button"><a href="#" id="login_knap">Login</a></li>
+            <li class="item button secondary"><a href="404.html">Kurv<i class="fas fa-shopping-cart"></i></a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <!-- Sideindhold starter her -->
+    <button onclick="document.getElementById('login_knap').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="login_knap" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="img/couteau_splash.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('login_knap').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <!-- Sideindhold slutter her -->
+</body>
+
+<!-- footer -->
+<footer class="site-footer content">
+    <div class="footer-content-wrapper">
+        <div class="footer-col">
+            <div class="col-four">
+                <p>COUTEAU &copy
+                    <script>document.write(new Date().getFullYear());</script> <br>
+                    Park Allé - 8000 Aarhus C
+                </p>
+                <div class="some">
+                    <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</div>
+
+<!-- Scripts -->
+<script src="./js/script.js" async defer></script>
+</body>
+
+
+</html>
