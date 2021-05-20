@@ -468,7 +468,8 @@ form {
   padding-bottom: 30px;
 }
 
-input[type='text'],
+input[type=text],
+input[type=password],
 select,
 textarea {
   width: 100%;
@@ -538,11 +539,122 @@ label {
 
 /* #endregion Kontakt */
 
-/*----------- Shop START ------------*/
 
 /*----------- Login START -----------*/
+/* #region LOGIN */
 
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
 
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: var(--login-button);
+  border-radius: 5px;
+}
+
+.cancelbtn:hover {
+  background-color: var(--menu-backcolor);
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 4%;
+  border-radius: 50%;
+}
+
+span.psw {
+     display: block;
+     float: none;
+     padding-top: 20px;
+  }
+
+  .psw a {
+    color: black;
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 120px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.container_login {
+  margin: 10px;
+  background-color: white;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* #endregion LOGIN */
+
+/*----------- Webshop START -----------*/
 /* #region shop */
 .column {
     width: 100%;
@@ -714,7 +826,7 @@ label {
     order: 2;
   }
 
-  /* .button a {
+  .button a {
     background: var(--login-button);
     height: 50px;
   }
@@ -730,13 +842,14 @@ label {
 
   .button a:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 
   .button:not(.secondary) a:hover {
     background: transparent;
     border: 1px solid var(--login-button);
   } */
-  /* #endregion Header */
+  /* #endregion Header
 
   /* #region main*/
   /* .index-text {
@@ -804,8 +917,8 @@ label {
 
   /* #endregion FOOTER */
 
-  /*-------------- KURV: START ----------------*/
-  /*#region kurv*/
+  /*-------------- WEBSHOP: START ----------------*/
+  /*#region WEBSHOP*/
     .column {
   float: center;
   width: 32,3%;
@@ -837,7 +950,29 @@ label {
   font-size: 1.8rem;
 }
 
-  /*#endregion kurv*/
+  /* #endregion WEBSHOP */
+
+  /*-------------- LOGIN: START ----------------*/
+  /*#region LOGIN*/
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.cancelbtn {
+  width: auto;
+}
+
+.container_login {
+  margin-bottom: 30px;
+}
+
+.modal-content {
+  width: 35rem; /* Could be more or less, depending on screen size */
+}
+
+  /*#endregion LOGIN*/
 }
 /*----------- Media Query: Desktop menu ------------*/
 @media all and (min-width: 1200px) {

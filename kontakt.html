@@ -23,21 +23,19 @@
                     <img src="./img/billeder/Couteau_logo.png" alt="">
                 </a></li>
             <li class="item"><a href="index.html">Home</a></li>
-            <li class="item"><a href="webshop.html">Shop</a></li>
             <li class="item has-submenu">
                 <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
                 <ul class="submenu">
                     <li class="subitem"><a href="pleje.html">Pleje & vedligehold</a></li>
                     <li class="subitem"><a href="rockwell.html">Rockwellskalaen</a></li>
                     <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
-
                 </ul>
             </li>
             <li class="item"><a href="om-os.html">Om os</a></li>
             <li class="item"><a href="kontakt.html">Kontakt</a></li>
-            <!-- <li class="item"><a href="kurv.html">Kurv <i class="fas fa-shopping-cart"></i></a></li> -->
-            <li class="item button"><a href="404.html">Login</a></li>
-            <li class="item button secondary"><a href="404.html">Kurv<i class="fas fa-shopping-cart"></i></a></li>
+            <li class="item button"><a id="login_btn">Login</a></li>
+            <li class="item button secondary"><a href="webshop.html">Webshop<i class="fas fa-shopping-cart"></i></a>
+            </li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
@@ -94,6 +92,39 @@
                     </div>
                 </div>
             </main>
+        </div>
+
+        <!-- Login popup -->
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="./404.html" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <!-- <img src="img/billeder/favicon.png" alt="Avatar" class="avatar"> -->
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Brugernavn</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Kodeord</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <!-- <button type="submit">Login</button> -->
+                    <a class="standard_knap" href="404.html" onclick="document.review.submit()">Log ind</a>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Husk mig
+                    </label>
+                </div>
+
+                <div class="container_login">
+                    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Endnu ikke medlem, klik her</button> -->
+                    <a class="cancelbtn" href="404.html">Endnu ikke medlem, klik her</a>
+                    <span class="psw">Glemt <a href="404.html">password?</a></span>
+                </div>
+            </form>
         </div>
         <!-- Sideindhold slutter her -->
 

@@ -72,11 +72,25 @@ function initMap() {
 
 //Login form
 //Henter modalen
-var modal = document.getElementById('login_knap');
 
-// Når brugeren klikker udenfor modalen, så lukkes den
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+// function close_modal() {
+//   let modal = document.getElementById('id01');
+
+//   window.onclick = function (event) {
+//     if (event.target == modal) {
+//       modal.style.display = "none";
+//     }
+//   }
+// }
+
+document.getElementById("login_btn").addEventListener("click", show_modal)
+
+function show_modal() {
+  // {
+  console.log('Vis modal');
+  // let modal = document.getElementById('id01');
+  // modal.style.display = "block";
+  // }
+  // document.getElementById("modal").style.display = "block";
+  document.querySelector('.modal').style.display = 'block';
 }
