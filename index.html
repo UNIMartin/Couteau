@@ -20,9 +20,10 @@
     <nav>
         <ul class="menu">
             <li class="logo"><a href="index.html">
-                    <img src="./img/billeder/Couteau_logo.png" alt="">
+                    <img src="./img/billeder/Couteau_logo.png" alt="Couteaus logo i hvid og blå"
+                        title="Tilbage til forsiden">
                 </a></li>
-            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html" title="Tilbage til forsiden">Home</a></li>
             <li class="item has-submenu">
                 <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
                 <ul class="submenu">
@@ -31,10 +32,11 @@
                     <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
                 </ul>
             </li>
-            <li class="item"><a href="om-os.html">Om os</a></li>
-            <li class="item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="item button"><a id="login_btn">Login</a></li>
-            <li class="item button secondary"><a href="webshop.html">Webshop<i class="fas fa-shopping-cart"></i></a>
+            <li class="item" title="Om os"><a href="om-os.html">Om os</a></li>
+            <li class="item" title="Kontakt os"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item button" title="Åben login"><a id="login_btn">Login</a></li>
+            <li class="item button secondary" title="Åben webshop"><a href="webshop.html">Webshop<i
+                        class="fas fa-shopping-cart"></i></a>
             </li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
@@ -47,38 +49,41 @@
         <div id="content-wrap">
             <div class="hero-index shadow"></div>
             <main class="index-text">
-                <h1>Velkommen bla bla bla</h1>
+                <h1>Velkommen til Couteau</h1>
+
                 <p>
                     Vi ønsker, her hos Couteau, at levere produkter der kan stå mål med de krav en dansk madentusiast
                     har til sine redskaber
                     - nemlig, at kvalitet kommer før kvantitet.
-                    Derfor ønsker vi levere produkter der kan tålet at blive elsket samtidigt med at de kan tåle daglig
-                    brug og den slitage
-                    dette måtte medføre.
+                    Vores produkter kan tåle at blive elsket, og dermed brugt på daglig basis. Dette medfører naturligt
+                    nok en vis slitage, men med vores kniv er du sikker på at den holder i mange år med den rette <a
+                        href="pleje.html" class="links" title="Læs hvordan du plejer din kniv">pleje.</a>
                     <br><br>
-                    En kniv fra Couteau er ikke bare en kniv. Det er det ypperste indenfor kokkeknive og med en
-                    kokkekniv fra Couteau, vil
-                    madlavning føles som en leg da vi gerne vil give den glæde videre, vi selv har fundet i gode knive.
+                    Da vi gerne vil give den glæde videre, vi selv har fundet i gode knive er en kniv fra Couteau ikke
+                    bare en kniv. Det er det ypperste indenfor kokkeknive og vil derfor få madlavningen til at føles som
+                    en leg.
                     <br><br>
                     Vores knive er udarbejdet efter alle traditionernes forskrifter, når det kommer til Japanske
                     Damaskus knive. Knivbladets
-                    karakteristiske mønster, er skabt ved den specielle foldeteknik der kan spores tilbage til år 900,
+                    karakteristiske mønster, er skabt ved den specielle foldeteknik der kan spores tilbage til år 900 -
+                    dette
                     kaldes for
                     "damacering". Dette er kreeret ved at folde flere, helt op til 300, lag stål sammen og dermed skabes
                     det krakteristiske
                     mønster.
-                    Denne teknik gør at knivens blad opnår en vis elastisitet og gør det nærmest ubrydelig. Kniven fra
-                    Couteau, har en
+                    Denne teknik gør at knivens blad opnår en vis elastisitet og gør stålet nærmest ubrydelig. Kniven
+                    fra
+                    Couteau, har desuden en
                     vinkel på 15 grader, 67 lag damaskus stål og en hårdhed på 60-62 HRC (<a href="rockwell.html"
-                        class="links">Læs mere om Rockwell
+                        class="links" title="Læs mere om Rockwell skalaen">Rockwell
                         skalaen</a>). Derudover bør
-                    det nævnes at skæftet på kniven er lavet i primium ibenholdt. En træsort der giver et godt greb,
+                    det nævnes, at skæftet på kniven er lavet i primium ibenholt. En træsort der giver et godt greb,
                     smuk finish og
                     komplementerer selve knivbladet til UG.
                     <br><br>
                     Selvfølgelig kræver kvalitetsknive af denne kaliber også lidt vedligehold, derfor har vi samlet
                     vores bedste råd til jer
-                    lige <a href="pleje.html" class="links">her</a>
+                    lige <a href="pleje.html" class="links" title="Læs hvordan du plejer din kniv">her</a>
                 </p>
             </main>
         </div>
@@ -90,7 +95,6 @@
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <!-- <img src="img/billeder/favicon.png" alt="Avatar" class="avatar"> -->
                 </div>
 
                 <div class="container">
@@ -100,7 +104,6 @@
                     <label for="psw"><b>Kodeord</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <!-- <button type="submit">Login</button> -->
                     <a class="standard_knap" href="404.html" onclick="document.review.submit()">Log ind</a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
@@ -108,8 +111,6 @@
                 </div>
 
                 <div class="container_login">
-                    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="cancelbtn">Endnu ikke medlem, klik her</button> -->
                     <a class="cancelbtn" href="404.html">Endnu ikke medlem, klik her</a>
                     <span class="psw">Glemt <a href="404.html">password?</a></span>
                 </div>
@@ -127,8 +128,8 @@
                             Park Allé - 8000 Aarhus C
                         </p>
                         <div class="some">
-                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="#" title="Åben Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" title="Åben Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                     </div>
                 </div>

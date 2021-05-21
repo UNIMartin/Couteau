@@ -20,9 +20,10 @@
     <nav>
         <ul class="menu">
             <li class="logo"><a href="index.html">
-                    <img src="./img/billeder/Couteau_logo.png" alt="">
+                    <img src="./img/billeder/Couteau_logo.png" alt="Couteaus logo i hvid og blå"
+                        title="Tilbage til forsiden">
                 </a></li>
-            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html" title="Tilbage til forsiden">Home</a></li>
             <li class="item has-submenu">
                 <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
                 <ul class="submenu">
@@ -31,10 +32,11 @@
                     <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
                 </ul>
             </li>
-            <li class="item"><a href="om-os.html">Om os</a></li>
-            <li class="item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="item button"><a id="login_btn">Login</a></li>
-            <li class="item button secondary"><a href="webshop.html">Webshop<i class="fas fa-shopping-cart"></i></a>
+            <li class="item" title="Om os"><a href="om-os.html">Om os</a></li>
+            <li class="item" title="Kontakt os"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item button" title="Åben login"><a id="login_btn">Login</a></li>
+            <li class="item button secondary" title="Åben webshop"><a href="webshop.html">Webshop<i
+                        class="fas fa-shopping-cart"></i></a>
             </li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
@@ -49,21 +51,22 @@
                 <div class="container shadow">
                     <div id="kontakt-header">
                         <h1>Kontakt os</h1>
-                        <h3>Tøv ikke med at kontakte os for spørgsmål eller andet</h3> <!-- TODO Evt. en anden tekst -->
+                        <h3>Tøv ikke med at kontakte os med spørgsmål eller andet</h3>
                     </div>
                     <div class="row">
                         <div class="column shadow">
-                            <label for="findos">Find os her</label>
+                            <label class="find_os" for="findos">Find os her</label>
                             <div id="map" class="column"></div>
                             <div id="kontakt-info">
 
-                                <h3>Adresse</h3>
+                                <h4>Adresse</h4>
                                 <p>COUTEAU</p>
                                 <p>Park Allé 3</p>
                                 <p>8000 Aarhus C</p>
-                                <h3>Telefon</h3>
+                                <br>
+                                <h4>Telefon</h4>
                                 <p>87654321</p>
-                                <h3>E-mail</h3>
+                                <h4>E-mail</h4>
                                 <p>info@couteau.dk</p>
 
                             </div>
@@ -83,10 +86,10 @@
                                     <option value="andet">Andet</option>
                                 </select>
                                 <label for="besked">Besked</label>
-                                <textarea id="emne" name="emne" placeholder="Skriv beskeden.."
+                                <textarea id="emne" name="emne" placeholder="Skriv besked..."
                                     style="height:170px"></textarea>
-                                <a class="standard_knap" href="404.html" onclick="document.review.submit()">Send</a>
-                                <!-- TODO Evt. link til MODAL side -->
+                                <a class="standard_knap" title="Send os en besked" href="404.html"
+                                    onclick="document.review.submit()">Send</a>
                             </form>
                         </div>
                     </div>
@@ -101,7 +104,6 @@
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <!-- <img src="img/billeder/favicon.png" alt="Avatar" class="avatar"> -->
                 </div>
 
                 <div class="container">
@@ -111,7 +113,6 @@
                     <label for="psw"><b>Kodeord</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <!-- <button type="submit">Login</button> -->
                     <a class="standard_knap" href="404.html" onclick="document.review.submit()">Log ind</a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
@@ -119,8 +120,6 @@
                 </div>
 
                 <div class="container_login">
-                    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Endnu ikke medlem, klik her</button> -->
                     <a class="cancelbtn" href="404.html">Endnu ikke medlem, klik her</a>
                     <span class="psw">Glemt <a href="404.html">password?</a></span>
                 </div>
@@ -138,8 +137,8 @@
                             Park Allé - 8000 Aarhus C
                         </p>
                         <div class="some">
-                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="#" title="Åben Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" title="Åben Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                     </div>
                 </div>

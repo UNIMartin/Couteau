@@ -20,9 +20,10 @@
     <nav>
         <ul class="menu">
             <li class="logo"><a href="index.html">
-                    <img src="./img/billeder/Couteau_logo.png" alt="">
+                    <img src="./img/billeder/Couteau_logo.png" alt="Couteaus logo i hvid og blå"
+                        title="Tilbage til forsiden">
                 </a></li>
-            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html" title="Tilbage til forsiden">Home</a></li>
             <li class="item has-submenu">
                 <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
                 <ul class="submenu">
@@ -31,10 +32,11 @@
                     <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
                 </ul>
             </li>
-            <li class="item"><a href="om-os.html">Om os</a></li>
-            <li class="item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="item button"><a id="login_btn">Login</a></li>
-            <li class="item button secondary"><a href="webshop.html">Webshop<i class="fas fa-shopping-cart"></i></a>
+            <li class="item" title="Om os"><a href="om-os.html">Om os</a></li>
+            <li class="item" title="Kontakt os"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item button" title="Åben login"><a id="login_btn">Login</a></li>
+            <li class="item button secondary" title="Åben webshop"><a href="webshop.html">Webshop<i
+                        class="fas fa-shopping-cart"></i></a>
             </li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
@@ -46,12 +48,13 @@
     <div id="page-container">
         <div id="content-wrap">
             <main class="inspiration-text">
-                <h2>Inspiration bla bla bla</h2>
+                <h2>Hvad kan jeg bruge min Damaskus kokkekniv til?</h2>
                 <!-- Video -->
-                <video class="inspiration-video shadow" playsinline loop muted autoplay>
+                <video class="inspiration-video shadow" title="Videoloop af Couteaus kniv i brug" playsinline loop muted
+                    autoplay>
                     <source src="./video/video.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
-                    Din browser supporterer ikke video tagget.
+                    <!-- Din browser supporterer ikke video tagget. -->
                 </video>
                 <p>
                     Leder du efter en ny, god kokkekniv til at komplimentere din formåen i køkkenet? Så er du kommet til
@@ -61,10 +64,21 @@
                 </p>
                 <br>
                 <p>
-                    Med en damaskuskniv får du ikke bare en køkkenkniv i traditionel forstand - du får et et værktøj,
+                    Vi har samlet lidt opskrifter som vi mener komplimenterer knivens formåen og håber at det vil
+                    inspirere dig til at give dig i kast med madlavningen, med din nye Couteau Damaskus kniv.
+                    Kniven er fænomenal udi at hakke grøntsager, skære kød eller fisk og er generelt en god all-around
+                    kniv at have i sin samling. Derfor vil det være en god begynderkniv.
+                </p>
+                <br>
+                <p>
+                    Med en kniv i damaskus stål får du ikke bare en køkkenkniv i traditionel forstand - du får et et
+                    værktøj,
                     der kan holde mange år frem. Klingens karakteristiske mønster er skabt ved hjælp af den specielle
                     foldeteknik, som i alt sin enkelthed går ud på at papirstynde lag af stål - af forskellige slags,
-                    foldes og derved gør stålet nærmest ubrydeligt.
+                    foldes og derved gør stålet nærmest ubrydeligt. Denne damaskus kniv har 67 lag stål og dette giver
+                    den en fantastisk skarphed og gør at den nærmest bare glider gennem alt hvad du sætter den til at
+                    skære
+                    i - som var det smør.
                 </p>
             </main>
         </div>
@@ -76,7 +90,6 @@
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <!-- <img src="img/billeder/favicon.png" alt="Avatar" class="avatar"> -->
                 </div>
 
                 <div class="container">
@@ -86,7 +99,6 @@
                     <label for="psw"><b>Kodeord</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <!-- <button type="submit">Login</button> -->
                     <a class="standard_knap" href="404.html" onclick="document.review.submit()">Log ind</a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
@@ -94,8 +106,6 @@
                 </div>
 
                 <div class="container_login">
-                    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Endnu ikke medlem, klik her</button> -->
                     <a class="cancelbtn" href="404.html">Endnu ikke medlem, klik her</a>
                     <span class="psw">Glemt <a href="404.html">password?</a></span>
                 </div>
@@ -113,8 +123,8 @@
                             Park Allé - 8000 Aarhus C
                         </p>
                         <div class="some">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" title="Åben Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" title="Åben Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                     </div>
                 </div>

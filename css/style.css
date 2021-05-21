@@ -17,7 +17,6 @@
   --p-text-size-1200: 1.3rem;
 
   --header-height: 98px;
-  /* --overlay-background-color:#349adf33; */
   --menu-backcolor: #0c114e;
   --menu-text-color: rgb(255, 255, 255);
   --menu-text-hover: #a2adab;
@@ -41,40 +40,11 @@
   --page-content-padding-top-1200: 120px;
 
   --index-hero-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url('../img/billeder/cover-index.png');/* TODO Rense ud i disse ubrugte inden aflevering*/
-  /* --pleje-hero-image: url('../img/billeder/cover-index.png') no-repeat 100% 0%;  */
-  /* --rockwell-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%; */
-  /* --inspiration-hero-image: url('../img/banner/cover-index.png') no-repeat 100%
-    0%; */
-  /* --kontakt-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%; */
-  /* --kurv-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%; */
-  /* --omos-hero-image: url('../img/banner/cover-index.png') no-repeat 100% 0%; */
-  /* --hero-image-404: url('../img/banner/cover-index.png') no-repeat 100% 0%; */
+    url('../img/billeder/cover-index.png');
 
-  --index-hero-image-height-mobile: 300px; /* TODO Rense ud i disse ubrugte inden aflevering*/
+  --index-hero-image-height-mobile: 300px; 
   --index-hero-image-height-700: 500px;
   --index-hero-image-height-1200: 600px;
-  /* --pleje-hero-image-height-mobile: 100px;
-  --pleje-hero-image-height-700: 200px;
-  --pleje-hero-image-height-1200: 300px;
-  --rockwell-hero-image-height-mobile: 100px;
-  --rockwell-hero-image-height-700: 200px;
-  --rockwell-hero-image-height-1200: 300px;
-  --inspiration-hero-image-height-mobile: 100px;
-  --inspiration-hero-image-height-700: 200px;
-  --inspiration-hero-image-height-1200: 300px;
-  --kontakt-hero-image-height-mobile: 100px;
-  --kontakt-hero-image-height-700: 200px;
-  --kontakt-hero-image-height-1200: 300px;
-  --kurv-hero-image-height-mobile: 100px;
-  --kurv-hero-image-height-700: 200px;
-  --kurv-hero-image-height-1200: 300px;
-  --omos-hero-image-height-mobile: 100px;
-  --omos-hero-image-height-700: 200px;
-  --omos-hero-image-height-1200: 300px;
-  --error-hero-image-height-mobile: 100px;
-  --error-hero-image-height-700: 200px;
-  --error-hero-image-height-1200: 300px; */
 
   --footer-height: 20rem;
   --footer-background-color: #0c114e;
@@ -383,11 +353,6 @@ a {
 
 /* #region Pleje */
 
-/* .pleje-flex {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .pleje-pic {
   width: 100%;
   height: auto;
@@ -400,16 +365,6 @@ a {
    margin-top: 20px;
   margin-bottom: 20px;
 }
-
-/* .pleje-pic2,
-.pleje-info {
-  padding-top: 30px;
-  flex: 100%;
-} */
-/* 
-.pleje-info {
-  padding-right: 30px;
-} */
 
 /* #endregion Pleje */
 
@@ -452,6 +407,13 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.produkt_info{
+  list-style-type: circle;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
 /* #endregion Om Os */
 
 /*----------- Kontakt START ------------*/
@@ -483,6 +445,11 @@ textarea {
 
 label {
   font-size: var(--h3-text-size-mobile);
+}
+
+.find_os{
+  font-size: var(--h2-text-size-700);
+  font-weight: 700;
 }
 
 /* Style the container/contact section */
@@ -879,14 +846,6 @@ span.psw {
   margin-left: auto;
     margin-right: auto 
 }
-
-  /* .pleje-info {
-    flex: 40%;
-  }
-
-  .pleje-pic2 {
-    flex: 40%;
-  } */
 
   /* #endregion Kontakt */
 

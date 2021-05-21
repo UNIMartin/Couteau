@@ -20,9 +20,10 @@
     <nav>
         <ul class="menu">
             <li class="logo"><a href="index.html">
-                    <img src="./img/billeder/Couteau_logo.png" alt="">
+                    <img src="./img/billeder/Couteau_logo.png" alt="Couteaus logo i hvid og blå"
+                        title="Tilbage til forsiden">
                 </a></li>
-            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html" title="Tilbage til forsiden">Home</a></li>
             <li class="item has-submenu">
                 <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
                 <ul class="submenu">
@@ -31,10 +32,11 @@
                     <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
                 </ul>
             </li>
-            <li class="item"><a href="om-os.html">Om os</a></li>
-            <li class="item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="item button"><a id="login_btn">Login</a></li>
-            <li class="item button secondary"><a href="webshop.html">Webshop<i class="fas fa-shopping-cart"></i></a>
+            <li class="item" title="Om os"><a href="om-os.html">Om os</a></li>
+            <li class="item" title="Kontakt os"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item button" title="Åben login"><a id="login_btn">Login</a></li>
+            <li class="item button secondary" title="Åben webshop"><a href="webshop.html">Webshop<i
+                        class="fas fa-shopping-cart"></i></a>
             </li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
@@ -52,36 +54,47 @@
                     Vi er en flok studerende, der i øjeblikket er i gang med en uddannelse til webudviklere, men vi
                     holder alle af at bruge tid i et
                     køkken og forkæle
-                    vore nærmeste med lækre måltider. Vi fandt ud af at vi alle gerne ville have gode og holdbare
+                    vore nærmeste med lækre måltider. Vi kom frem til at vi alle gerne ville have gode og holdbare
                     kvalitets redskaber, men
-                    at vi synes prisen var for høj.
+                    at vi ofte synes prisen var for høj.
                     Derfor besluttede vi os for at tage sagen i egen hånd så at sige, og finde nogle knive som vi
                     kan
                     stå indefor og som vi
                     selv nyder at bruge.
                 </p>
-                <img src="img/billeder/knivibrug-squash.jpg" alt="" class="omos-billede">
+                <img src="img/billeder/knivibrug-squash.jpg" alt="Couteau Damaskus kniv i brug mens der skæres squash"
+                    class="omos-billede">
                 <p>
-                    Couteau er en dansk webshop der tilbyder lækre, unikke og eksklusive japanske damaskus
-                    kokkeknive.
-                    Vi ønsker at formidle
-                    vores passion for god kvalitet ud til vores kunder, da det er det vi selv sætter pris på. Her er
-                    prisen samtidigt
-                    presset i bund, så det hele ikke bare køre efter den gamle devise med at "god kvalitet er lig
-                    med
-                    tårnhøj pris".
+                    Couteau er en nystartet dansk webshop der tilbyder lækre, unikke og eksklusive japanske Damaskus
+                    kokkeknive, med:
+                </p>
+                <ul class="produkt_info">
+                    <li> 67 lag japansk stål</li>
+                    <li>60-61HRC</li>
+                    <li>15 graders vinkel</li>
+                    <li>Eksklusivt skæfte i ibenholt</li>
+                </ul>
+                <p>
+                    Vi vil gerne have at vore kunder også får den samme fantastiske oplevelese med disse Damaskus knive,
+                    som vi selv har haft, da vi ved at vore kunder sætter pris på kvalitet!
+                    Vores ambition er at give vore kunder mulighed for at købe en kvalitetskniv, uden at skulle betale
+                    en tårnhøj pris - hvilket ellers ser ud til at være kotymen efterhånden. Derfor har vi droppet alle
+                    de fordyrende mellemled og kan på den måde holde prisen lige så skarp som vore knive!
+
                     <br><br>
-                    Vores kniv sortiment består i skrivende stund kun af en, nemlig vores lækre <a href="webshop.html"
-                        class="links">Damaskus kokkekniv</a> i
-                    japanskstål. Her arbejder vi under
+                    Vores kniv sortiment består, i skrivende stund, kun af én, nemlig vores lækre <a href="webshop.html"
+                        title="Gå til webshoppen" class="links">Damaskus kokkekniv</a> i
+                    japanskstål. Her arbejder vi ud fra
                     devisen
-                    <em>"Kvalitet over kvantitet" </em>og vi tillader os at stille krav til
+                    <em>"Kvalitet over kvantitet" </em>og vi tillader os derfor også at stille krav til
                     de produkter vi vil
                     forhandle - på samme måde som var det knive selv skulle købe til eget forbrug. Vi vil nemlig
                     gerne
                     at det skal give
                     mening at købe en god kvalitetskniv.
-                    Dog arbejder vi på højtryk på at udvide vores sortiment, så det også kan komme jer tilgode.
+                    <br><br>
+                    Vi arbejder på højtryk på at teste diverse produkter, så vi på den måde kan udvide vores sortiment,
+                    hurtigst muligt.
                 </p>
             </main>
         </div>
@@ -93,7 +106,6 @@
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <!-- <img src="img/billeder/favicon.png" alt="Avatar" class="avatar"> -->
                 </div>
 
                 <div class="container">
@@ -103,7 +115,6 @@
                     <label for="psw"><b>Kodeord</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <!-- <button type="submit">Login</button> -->
                     <a class="standard_knap" href="404.html" onclick="document.review.submit()">Log ind</a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
@@ -111,8 +122,6 @@
                 </div>
 
                 <div class="container_login">
-                    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Endnu ikke medlem, klik her</button> -->
                     <a class="cancelbtn" href="404.html">Endnu ikke medlem, klik her</a>
                     <span class="psw">Glemt <a href="404.html">password?</a></span>
                 </div>
@@ -130,8 +139,8 @@
                             Park Allé - 8000 Aarhus C
                         </p>
                         <div class="some">
-                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="#" title="Åben Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" title="Åben Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                     </div>
                 </div>

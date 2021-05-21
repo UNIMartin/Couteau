@@ -20,9 +20,10 @@
     <nav>
         <ul class="menu">
             <li class="logo"><a href="index.html">
-                    <img src="./img/billeder/Couteau_logo.png" alt="">
+                    <img src="./img/billeder/Couteau_logo.png" alt="Couteaus logo i hvid og blå"
+                        title="Tilbage til forsiden">
                 </a></li>
-            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html" title="Tilbage til forsiden">Home</a></li>
             <li class="item has-submenu">
                 <a>Information <i class="fas fa-caret-down arrow-rotate"></i></a>
                 <ul class="submenu">
@@ -31,10 +32,11 @@
                     <li class="subitem"><a href="inspiration.html">Inspiration</a></li>
                 </ul>
             </li>
-            <li class="item"><a href="om-os.html">Om os</a></li>
-            <li class="item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="item button"><a id="login_btn">Login</a></li>
-            <li class="item button secondary"><a href="webshop.html">Webshop<i class="fas fa-shopping-cart"></i></a>
+            <li class="item" title="Om os"><a href="om-os.html">Om os</a></li>
+            <li class="item" title="Kontakt os"><a href="kontakt.html">Kontakt</a></li>
+            <li class="item button" title="Åben login"><a id="login_btn">Login</a></li>
+            <li class="item button secondary" title="Åben webshop"><a href="webshop.html">Webshop<i
+                        class="fas fa-shopping-cart"></i></a>
             </li>
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
@@ -47,11 +49,12 @@
         <div id="content-wrap">
 
             <main class="rockwell-text">
-                <h2>Rockwellskalaen bla bla bla</h2>
+                <h2>Damaskus knive og Rockwell-skalaen</h2>
                 <h4>Hvad er Rockwell skalaen?</h4>
                 <p>
-                    Rockwell-skalaen er en skala der er internationalt anerkendt og brugt metode til at måle hårdheden
-                    af stålet og hvor god
+                    Rockwell-skalaen er en skala der er internationalt anerkendt og en metode der bruges til at måle
+                    hårdheden
+                    af stålet på en kniv og hvor god
                     kniven er til at holde sin skarphed.
                 </p>
                 <br>
@@ -59,18 +62,20 @@
                 <p> Rockwell-skalaen er to-delt:
                     HR = "Hardness Rockwell" og dernæst "A, B, C, D, E, F..." osv
                     Da det mest anvendte bogstav indenfor køkkenknive er C, får alle køkkenknive en karakter der ligger
-                    indenfor HRC.
-                    Til sammenligning ligger en standard europædisk køkkenkniv på en 50-55 HRC og en japansk damaskus
+                    indenfor begrebet "HRC".
+                    <br>
+                    Til sammenligning ligger en standard europædisk køkkenkniv på mellem 50-55 HRC og en japansk
+                    damaskus
                     køkkenkniv vil ligge
-                    på 62 HRC.
+                    på +60 HRC.
                 </p>
                 <br>
                 <h4>Hvorfor er en høj HRC vigtig når jeg skal købe en kniv?</h4>
                 <p>
-                    Det vigtigst punkt du kan kigge på når du er på jagt efter en ny kniv til samlingen, er faktisk HRC.
-                    For jo højere HRC
-                    kniven har jo bedre.
-                    Dette siger noget om hvor god kniven er til at forblive skarp, efter længere tids brug.
+                    Et højt HRC er vigtigt da dette siger noget om hvor skarp og hvor slidstærk kniven er. Det fortæller
+                    dig basalt set, hvor lang levetiden er på den pågældende kniv. Jo højere HRC jo længere levetid og
+                    jo længere tid vil kniven forblive skarp uden at skulle slibes.
+                    <br>
                     Da europædiske køkkenknive ofte har et lavt HRC vil de hurtigere blive sløve og det kan betyde, for
                     dig, at du skal
                     bruge en masse penge og tid på at få dem enten slebet hos en professionel eller selv bruge tiden på
@@ -78,19 +83,23 @@
                 </p>
                 <br>
                 <p>
-                    Alt dette betyder i det store hele, at du kan se hvor lang en levetid din kniv egentlig har. Ønsker
+                    Alt dette betyder i det store hele, at du kan se hvor lang en levetid din kniv egentlig har.
+                    <br>
+                    Ønsker
                     du
                     en
                     kniv med lang
                     levetid, så skal du gå efter et højt HRC og noget godt knivstål.
-                    Dette får du f.eks i vores <a href="webshop.html" class="links">kokkekniv</a>, men det forudsætter
-                    samtidigt at du passer på
+                    Lang levetid og skarphed får du f.eks i vores <a href="webshop.html" title="Gå til webshoppen"
+                        class="links">kokkekniv</a>, men det forudsætter
+                    også at du passer på
                     dine knive og ikke mishandler dem.
                     For at hjælpe dig med at passe på dine knive og strække deres levetid mest muligt, har vi samlet
-                    noge gode råd <a href="pleje.html" class="links">her</a>
+                    noge gode råd <a href="pleje.html" title="Læs om pleje af din kniv" class="links">her</a>
                 </p>
                 <div class="pleje-pic">
-                    <img src="img/billeder/kniv_info.png" alt="">
+                    <img src="img/billeder/kniv_info.png"
+                        alt="Oversigt med engelsk tekst, der giver informationer om Couteaus kniv">
                 </div>
             </main>
         </div>
@@ -102,7 +111,6 @@
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <!-- <img src="img/billeder/favicon.png" alt="Avatar" class="avatar"> -->
                 </div>
 
                 <div class="container">
@@ -112,7 +120,6 @@
                     <label for="psw"><b>Kodeord</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
-                    <!-- <button type="submit">Login</button> -->
                     <a class="standard_knap" href="404.html" onclick="document.review.submit()">Log ind</a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
@@ -120,8 +127,6 @@
                 </div>
 
                 <div class="container_login">
-                    <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Endnu ikke medlem, klik her</button> -->
                     <a class="cancelbtn" href="404.html">Endnu ikke medlem, klik her</a>
                     <span class="psw">Glemt <a href="404.html">password?</a></span>
                 </div>
@@ -139,8 +144,8 @@
                             Park Allé - 8000 Aarhus C
                         </p>
                         <div class="some">
-                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="#" title="Åben Instagram"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" title="Åben Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                     </div>
                 </div>

@@ -70,27 +70,10 @@ function initMap() {
 }
 
 
-//Login form
-//Henter modalen
-
-// function close_modal() {
-//   let modal = document.getElementById('id01');
-
-//   window.onclick = function (event) {
-//     if (event.target == modal) {
-//       modal.style.display = "none";
-//     }
-//   }
-// }
-
+//Login form (modal)
 document.getElementById("login_btn").addEventListener("click", show_modal)
 
 function show_modal() {
-  // {
   console.log('Vis modal');
-  // let modal = document.getElementById('id01');
-  // modal.style.display = "block";
-  // }
-  // document.getElementById("modal").style.display = "block";
   document.querySelector('.modal').style.display = 'block';
 }
