@@ -29,7 +29,7 @@
 
   --login-button: #8591a4;
   --sign-up-button: #8591a4;
-  --links-color:black;
+  --links-color: black;
 
   --max-bredde-sideindhold-mobile: 95%;
   --max-bredde-sideindhold-700: 90%;
@@ -42,7 +42,7 @@
   --index-hero-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url('../img/billeder/cover-index.png');
 
-  --index-hero-image-height-mobile: 300px; 
+  --index-hero-image-height-mobile: 300px;
   --index-hero-image-height-700: 500px;
   --index-hero-image-height-1200: 600px;
 
@@ -76,17 +76,18 @@ h3 {
   font-size: var(--h3-text-size-mobile);
 }
 
-h4{
+h4 {
   padding-bottom: 5px;
 }
 
-.links{
+.links {
   color: var(--links-color);
   font-weight: 700;
 }
 
 p,
-a {
+a,
+article {
   font-size: var(--p-text-size-mobile);
 }
 
@@ -331,7 +332,7 @@ a {
 }
 
 #content-wrap {
-  padding-bottom: var(--footer-height);
+  padding-bottom: calc(var(--footer-height) - 50px);
   width: var(--max-bredde-sideindhold-mobile);
   margin: auto;
 }
@@ -362,7 +363,7 @@ a {
 
 .pleje-pic2 {
   width: 100%;
-   margin-top: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -401,18 +402,22 @@ a {
 /*----------- Om os START ------------*/
 
 /* #region Om OS */
-.omos-billede{
+.omos-billede {
   width: 100%;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.produkt_info{
+.produkt_info {
   list-style-type: circle;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-top: 10px;
+}
+
+ul.produkt_info {
+  list-style-type: square;
 }
 /* #endregion Om Os */
 
@@ -430,8 +435,8 @@ form {
   padding-bottom: 30px;
 }
 
-input[type=text],
-input[type=password],
+input[type='text'],
+input[type='password'],
 select,
 textarea {
   width: 100%;
@@ -447,7 +452,7 @@ label {
   font-size: var(--h3-text-size-mobile);
 }
 
-.find_os{
+.find_os {
   font-size: var(--h2-text-size-700);
   font-weight: 700;
 }
@@ -488,6 +493,10 @@ label {
   line-height: 30px;
 }
 
+#besked {
+  height: 170px;
+}
+
 .standard_knap {
   display: block;
   background-color: var(--menu-backcolor);
@@ -500,19 +509,17 @@ label {
 }
 
 .standard_knap:hover {
-  
   background-color: var(--login-button);
 }
 
 /* #endregion Kontakt */
-
 
 /*----------- Login START -----------*/
 /* #region LOGIN */
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -550,14 +557,14 @@ img.avatar {
 }
 
 span.psw {
-     display: block;
-     float: none;
-     padding-top: 20px;
-  }
+  display: block;
+  float: none;
+  padding-top: 20px;
+}
 
-  .psw a {
-    color: black;
-  }
+.psw a {
+  color: black;
+}
 
 /* The Modal (background) */
 .modal {
@@ -569,8 +576,8 @@ span.psw {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
   padding-top: 120px;
 }
 
@@ -606,17 +613,25 @@ span.psw {
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  animation: animatezoom 0.6s;
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* #endregion LOGIN */
@@ -624,10 +639,10 @@ span.psw {
 /*----------- Webshop START -----------*/
 /* #region shop */
 .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
 
 /* Style the counter cards */
 .card {
@@ -637,29 +652,28 @@ span.psw {
   background-color: #f1f1f1;
 }
 
-
-.produkt-billede{
+.produkt-billede {
   width: 100%;
   padding-bottom: 10px;
 }
 
-.fragt{
+.fragt {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 
   text-align: center;
   background-color: #f1f1f1;
-   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-   padding: 20px;
-   margin-bottom: 20px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.produkt-text{
+.produkt-text {
   text-align: left;
 }
 
-.prisen{ 
+.prisen {
   text-align: center;
   margin: 20px;
   font-size: 1.5rem;
@@ -682,11 +696,9 @@ span.psw {
   padding-bottom: 60px;
 }
 
-
-
 .til_forside {
   position: relative;
-   background-color: var(--menu-backcolor);
+  background-color: var(--menu-backcolor);
   padding: 20px 60px 20px 60px;
   border-radius: 10px;
   line-height: 100px;
@@ -715,7 +727,8 @@ span.psw {
   }
 
   p,
-  a {
+  a,
+  article {
     font-size: var(--p-text-size-700);
   }
 
@@ -815,7 +828,8 @@ span.psw {
   .button:not(.secondary) a:hover {
     background: transparent;
     border: 1px solid var(--login-button);
-  } */
+  }
+  */
   /* #endregion Header
 
   /* #region main*/
@@ -832,20 +846,19 @@ span.psw {
   /* #region Pleje */
 
 .pleje-pic {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-    margin-right: auto 
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-}
-
-.pleje-pic2 {
-  display: block;
-  width: 10 0%;
-  margin-left: auto;
-    margin-right: auto 
-}
+  .pleje-pic2 {
+    display: block;
+    width: 10 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   /* #endregion Kontakt */
 
@@ -878,58 +891,60 @@ span.psw {
 
   /*-------------- WEBSHOP: START ----------------*/
   /*#region WEBSHOP*/
-    .column {
-  float: center;
-  width: 32,3%;
-  max-height: 1000px;
-  padding: 0 10px;
-}
+  .column {
+    float: center;
+    width: 32, 3%;
+    max-height: 1000px;
+    padding: 0 10px;
+  }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  /* Clear floats after the columns */
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 
-.fragt{
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  align-items: left;
-  justify-content: space-around;
-   background-color: #f1f1f1;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   padding: 20px;
-}
-.prisen{ 
-  font-size: 1.8rem;
-}
+  .fragt {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: left;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  .prisen {
+    font-size: 1.8rem;
+  }
 
   /* #endregion WEBSHOP */
 
   /*-------------- LOGIN: START ----------------*/
   /*#region LOGIN*/
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
 
-.cancelbtn {
-  width: auto;
-}
+  .cancelbtn {
+    width: auto;
+  }
 
-.container_login {
-  margin-bottom: 30px;
-}
+  .container_login {
+    margin-bottom: 30px;
+  }
 
-.modal-content {
-  width: 35rem; /* Could be more or less, depending on screen size */
-}
+  .modal-content {
+    width: 35rem; /* Could be more or less, depending on screen size */
+  }
 
   /*#endregion LOGIN*/
 }
@@ -949,7 +964,8 @@ span.psw {
   }
 
   p,
-  a {
+  a,
+  article {
     font-size: var(--p-text-size-1200);
   }
 

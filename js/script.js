@@ -46,12 +46,10 @@ function closeSubmenu(e) {
 
   if (!isClickInside && menu.querySelector('.submenu-active')) {
     menu.querySelector('.submenu-active').classList.remove('submenu-active')
+    arrow.classList.remove('rotate')
   }
 }
 document.addEventListener('click', closeSubmenu, false)
-
-
-
 
 // Google Map API
 function initMap() {
@@ -69,11 +67,15 @@ function initMap() {
   })
 }
 
-
 //Login form (modal)
-document.getElementById("login_btn").addEventListener("click", show_modal)
+document.getElementById('login_btn').addEventListener('click', show_modal)
 
 function show_modal() {
-  console.log('Vis modal');
-  document.querySelector('.modal').style.display = 'block';
+  document.querySelector('.modal').style.display = 'block'
+}
+
+document.querySelector('.close').addEventListener('click', hide_modal)
+
+function hide_modal() {
+  document.getElementById('id01').style.display = 'none'
 }
