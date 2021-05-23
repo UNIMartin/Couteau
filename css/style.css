@@ -49,9 +49,8 @@
   --footer-height: 20rem;
   --footer-background-color: #0c114e;
   --footer-text-color: rgb(255, 255, 255);
-
-  /* #endregion ROOT værdier */
 }
+/* #endregion ROOT værdier */
 /*------------ Global: START -------------*/
 
 /* #region Globalt */
@@ -87,7 +86,8 @@ h4 {
 
 p,
 a,
-article {
+article,
+li {
   font-size: var(--p-text-size-mobile);
 }
 
@@ -174,22 +174,20 @@ header {
 .item.button {
   order: 2;
   padding: 9px 5px;
+  cursor: pointer;
 }
 
 .item:not(.button) a:hover, /* All hovers */
 .item a:hover::after {
-  /* text-decoration: underline; */
   cursor: pointer;
   text-decoration: none;
   color: var(--menu-text-hover);
   opacity: var(--menu-text-hover-opasity);
-  /* background-color: red; */
   -webkit-transition: opacity 0.3s linear;
   -moz-transition: opacity 0.3s linear;
   -ms-transition: opacity 0.3s linear;
   -o-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
-  /* background-color: var(--submenu-background-color); */
 }
 
 .active .item {
@@ -342,10 +340,25 @@ a {
   min-height: calc(100vh - var(--header-height));
 }
 
-.shadow {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12);
+/* .shadow-produkt {
+  border-radius: 7px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+} */
+
+.shadow-produkt {
+  border: 1px solid;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 /* #endregion Generelle ting */
@@ -394,8 +407,38 @@ a {
 .inspiration-video {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 99%;
+  width: 100%;
+  overflow: hidden;
 }
+
+.inspiration_video_mTekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.inspiration-videos {
+  /* margin: 15px; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.mTekst {
+  padding: 20px;
+}
+
+.mTekst li {
+  padding-left: 15px;
+}
+
+.inspiration_opskrift_beskrivelse {
+  padding: 20px;
+}
+
+/* .mTekst p {
+  padding: 15px;
+} */
 
 /* #endregion Inspiration */
 
@@ -410,14 +453,31 @@ a {
 }
 
 .produkt_info {
-  list-style-type: circle;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-top: 10px;
 }
 
 ul.produkt_info {
   list-style-type: square;
+}
+
+.omos_videos {
+  /* margin-top: 30px; */
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.omos_video_mTekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.omos_mTekst {
+  padding-bottom: 20px;
 }
 /* #endregion Om Os */
 
@@ -506,6 +566,13 @@ label {
   border-radius: 5px;
   transition-duration: 0.3s;
   text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.kontakt_form {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .standard_knap:hover {
@@ -524,7 +591,6 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -638,9 +704,10 @@ span.psw {
 
 /*----------- Webshop START -----------*/
 /* #region shop */
-.column {
-  width: 100%;
-  display: block;
+.webshop_column {
+  /* width: 100%; */
+  box-sizing: border-box;
+  flex-basis: 100%;
   margin-bottom: 20px;
 }
 
@@ -728,7 +795,8 @@ span.psw {
 
   p,
   a,
-  article {
+  article,
+  li {
     font-size: var(--p-text-size-700);
   }
 
@@ -871,7 +939,7 @@ span.psw {
 
   .column {
     float: left;
-    width: 50%;
+    width: 48%;
     margin-top: 6px;
     padding: 20px;
   }
@@ -880,6 +948,10 @@ span.psw {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+
+  .kontakt-right-box {
+    margin-left: 20px;
   }
 
   /* #endregion Kontakt */
@@ -891,16 +963,16 @@ span.psw {
 
   /*-------------- WEBSHOP: START ----------------*/
   /*#region WEBSHOP*/
-  .column {
-    float: center;
-    width: 32, 3%;
+  .webshop_column {
+    float: left;
+    width: 50%;
     max-height: 1000px;
     padding: 0 10px;
   }
 
   /* Remove extra left and right margins, due to padding */
   .row {
-    margin: 0 -5px;
+    margin: 0 -10px;
   }
 
   /* Clear floats after the columns */
@@ -947,6 +1019,54 @@ span.psw {
   }
 
   /*#endregion LOGIN*/
+
+  /*-------------- INSPIRATION: START ----------------*/
+
+  /* #region INSPIRATION */
+  .inspiration_video_mTekst {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .inspiration-videos {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .inspiration-videos,
+  .mTekst {
+    width: 48%;
+    flex-basis: 50%;
+  }
+
+  .mTekst {
+    padding-left: 60px;
+  }
+  /* #endregion INSPIRATION */
+
+  /*-------------- Om OS: START ----------------*/
+  /* #region OM OS */
+
+  .omos_video_mTekst {
+    flex-direction: row;
+  }
+
+  .omos_videos {
+    /* padding-left: 15px; */
+    width: 100%;
+  }
+
+  .omos_mTekst {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  /* .omos-videos, */
+  /* .mTekst {
+    width: 100%;
+  } */
+
+  /* #endregion OM OS */
 }
 /*----------- Media Query: Desktop menu ------------*/
 @media all and (min-width: 1200px) {
@@ -965,7 +1085,8 @@ span.psw {
 
   p,
   a,
-  article {
+  article,
+  li {
     font-size: var(--p-text-size-1200);
   }
 
