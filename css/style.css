@@ -40,7 +40,7 @@
   --page-content-padding-top-1200: 120px;
 
   --index-hero-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url('../img/billeder/cover-index.png');
+    url('../img/cover-index.png');
 
   --index-hero-image-height-mobile: 300px;
   --index-hero-image-height-700: 500px;
