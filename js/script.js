@@ -53,14 +53,14 @@ document.addEventListener('click', closeSubmenu, false)
 
 // Google Map API
 function initMap() {
-  // The location of Uluru
+  // The location of Couteau
   const uluru = { lat: 56.152538, lng: 10.204006 }
-  // The map, centered at Uluru
+  // The map, centered at Couteau
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
     center: uluru,
   })
-  // The marker, positioned at Uluru
+  // The marker, positioned at Couteau
   const marker = new google.maps.Marker({
     position: uluru,
     map: map,
