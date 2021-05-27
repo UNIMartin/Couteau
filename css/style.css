@@ -341,16 +341,6 @@ a {
   min-height: var(--header-height);
 }
 
-/* .shadow-produkt {
-  border-radius: 7px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-} */
-
 .shadow-produkt {
   border: 1px solid;
   border-color: #e5e5e5 #dbdbdb #d2d2d2;
@@ -429,17 +419,14 @@ a {
   padding: 20px;
 }
 
-.mTekst li {
+.mTekst ul {
   padding-left: 15px;
+
 }
 
 .inspiration_opskrift_beskrivelse {
   padding: 20px;
 }
-
-/* .mTekst p {
-  padding: 15px;
-} */
 
 /* #endregion Inspiration */
 
@@ -906,16 +893,6 @@ span.psw {
   
   /* #endregion Header */
 
-  /* #region main*/
-  /* .index-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-  } */
-  /* #endregion main*/
-
   /*-------------- PLEJE: START --------------*/
   /* #region Pleje */
 
@@ -1069,11 +1046,6 @@ span.psw {
     padding-left: 20px;
   }
 
-  /* .omos-videos, */
-  /* .mTekst {
-    width: 100%;
-  } */
-
   /* #endregion OM OS */
 }
 /*----------- Media Query: Desktop menu ------------*/
@@ -1140,10 +1112,6 @@ span.psw {
     font-size: var(--menu-text-size-1200);
   }
 
-  /* .logo {
-    height: calc(var(--header-height) );
-    line-height: 100%;
-  } */
 
   .item {
     order: 1;
